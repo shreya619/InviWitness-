@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Safety Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Community Safety Platform</h1>
+        <nav>
+            <a href="#upload">Upload Evidence</a>
+            <a href="#complaint">File Complaint</a>
+            <a href="#watch">Neighborhood Watch</a>
+        </nav>
+    </header>
+
+    <section id="upload">
+        <h2>Upload Digital Evidence</h2>
+        <form id="uploadForm">
+            <input type="file" id="evidence" required>
+            <button type="button" onclick="uploadEvidence()">Upload</button>
+        </form>
+        <p id="uploadStatus"></p>
+    </section>
+
+    <section id="complaint">
+        <h2>File a Complaint</h2>
+        <form id="complaintForm">
+            <textarea placeholder="Describe your complaint" required></textarea>
+            <button type="button" onclick="submitComplaint()">Submit</button>
+        </form>
+        <p id="complaintStatus"></p>
+    </section>
+
+    <section id="watch">
+        <h2>Neighborhood Watch</h2>
+        <form id="watchForm">
+            <textarea placeholder="Report suspicious activity" required></textarea>
+            <button type="button" onclick="reportActivity()">Report</button>
+        </form>
+        <p id="watchStatus"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
